@@ -1,0 +1,10 @@
+{
+  "ImageId": "ami-e580c79d",
+  "KeyName": "dssg2018-ddd-keypair",
+  "SecurityGroupIds": [ "sg-01c4ea7e" ],
+  "SubnetId": "subnet-972d2ddf",
+  "InstanceType": "t2.micro",
+  "Placement":{
+    "AvailabilityZone": "us-west-2a"
+  }
+}
