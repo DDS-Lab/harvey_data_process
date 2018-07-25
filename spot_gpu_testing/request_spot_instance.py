@@ -3,7 +3,7 @@ import boto3
 
 session = boto3.Session(profile_name='DSSG2018-ddd-team')
 
-client = session.client('ec2')
+client = session.client('ec2', region_name='us-west-2')
 
 # starting spot instances
 
