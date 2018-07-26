@@ -29,7 +29,7 @@ request_description = client.describe_spot_instance_requests(
 
 print(request_id)
 
-time.sleep(20)
+time.sleep(60)
 
 
 # client.get_waiter(request_description['SpotInstanceRequests'][0]['Status']
