@@ -22,6 +22,7 @@ print(instance_ids)
 client.terminate_instances(InstanceIds=instance_ids)
 
 client.cancel_spot_instance_requests(SpotInstanceRequestIds=request_ids)
+# PLACE AN EXCEPTION
 
 # for request in requests['SpotInstanceRequests']:
 # 	print(request['InstanceId'])
