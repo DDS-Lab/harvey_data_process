@@ -8,13 +8,13 @@ client = session.client('ec2', region_name='us-west-2')
 # starting spot instances
 
 request = client.request_spot_instances(
-                SpotPrice='0.02',
+                SpotPrice='0.27',
                 InstanceCount=1,
                 Type='persistent',
                 InstanceInterruptionBehavior='stop',
                 LaunchSpecification={
-                    'ImageId': 'ami-e580c79d',
-                    'InstanceType': 't2.micro',
+                    'ImageId': 'ami-0b679238abead09bb',
+                    'InstanceType': 'p2.xlarge',
                     'SecurityGroupIds': ["sg-01c4ea7e"],
                     'KeyName': 'dssg2018-ddd-keypair',
                     'SubnetId': "subnet-972d2ddf",
